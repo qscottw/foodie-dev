@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d69d2737-6394-48cc-b7ad-34612f36464f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/aspect/ServiceLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/config/Swagger2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/controller/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/controller/BasicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/controller/ItemsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/controller/OrdersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/controller/PassportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/controller/ShopCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/java/com/qw/controller/StuFooController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-api/src/test/java/com/test/TransTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/enums/CommentLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/enums/OrderStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/enums/PayMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/enums/Sex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/enums/YesOrNo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/utils/CookieUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/utils/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/utils/DesensitizationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/utils/MD5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/utils/MobileEmailUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/utils/PagedGridResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/com/qw/utils/QWJSONResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/DayCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/Id.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/IdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/InvalidSystemClock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/RandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/Sid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/WorkerIdStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/strategy/FileLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/utils/HttpReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/utils/IPv4Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/utils/Ip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/utils/Props.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/utils/Serializes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-common/src/main/java/org/n3r/idworker/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/CarouselMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/CategoryMapperCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/ItemsCommentsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/ItemsImgMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/ItemsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/ItemsMapperCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/ItemsParamMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/ItemsSpecMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/OrderItemsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/OrderStatusMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/OrdersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/StuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/UserAddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/mapper/UsersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/java/com/qw/my/mapper/MyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/CarouselMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/CategoryMapperCustom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/ItemsCommentsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/ItemsImgMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/ItemsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/ItemsMapperCustom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/ItemsParamMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/ItemsSpecMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/OrderItemsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/OrderStatusMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/OrdersMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/StuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/UserAddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-mapper/src/main/resources/mapper/UsersMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/Carousel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/ItemsComments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/ItemsImg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/ItemsParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/ItemsSpec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/OrderItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/Stu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/UserAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/bo/AddressBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/bo/ShopCartBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/bo/SubmitOrderBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/bo/UserBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/vo/CategoryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/vo/CommentLevelCountsVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/vo/ItemCommentVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/vo/ItemInfoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/vo/NewItemsVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/vo/SearchItemsVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/vo/ShopCartVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/vo/SimpleItemsVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-pojo/src/main/java/com/qw/pojo/vo/SubCategoryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/CarouselService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/ItemsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/TestTransService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/impl/CarouselServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/impl/ItemsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/impl/StuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/impl/TestTransServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-dev-service/src/main/java/com/qw/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qw/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../Program Files/Maven/apache-maven-3.9.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2RmuO8L4S1QEez7bCPbIc0KMIE7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/19753/Desktop/java_projects/foodie-dev/foodie-dev-common/src/main/java/com/qw/enums",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.39655173",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\19753\Desktop\java_projects\foodie-dev\foodie-dev-common\src\main\java\com\qw\enums" />
+      <recent name="C:\Users\19753\Desktop\java_projects\foodie-dev\foodie-dev-common\src\main\java\com\qw\utils" />
+      <recent name="C:\Users\19753\Desktop\java_projects\foodie-dev\foodie-dev-mapper\src\main\resources\mapper" />
+      <recent name="C:\Users\19753\Desktop\java_projects\foodie-dev\foodie-dev-common\src\main\java" />
+      <recent name="C:\Users\19753\Desktop\java_projects\foodie-dev\foodie-dev-pojo\src\main\java\com\qw\pojo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\19753\Desktop\java_projects\foodie-dev\foodie-dev-common\src\main\java\com\qw\enums" />
+      <recent name="C:\Users\19753\Desktop\java_projects\foodie-dev\foodie-dev-common\src\main\java\com\qw\utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qw.service.impl" />
+      <recent name="com.qw.service" />
+      <recent name="com.qw.controller" />
+      <recent name="com.qw.pojo.vo" />
+      <recent name="com.qw.mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qw.Application" />
+      <module name="foodie-dev-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qw.utils.MD5Utils" />
+      <module name="foodie-dev-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qw.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.n3r.idworker.Sid" />
+      <module name="foodie-dev-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.n3r.idworker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="foodie-dev-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test" />
+      <option name="MAIN_CLASS_NAME" value="com.test.TransTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransTest.myTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="foodie-dev-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test" />
+      <option name="MAIN_CLASS_NAME" value="com.test.TransTest" />
+      <option name="METHOD_NAME" value="myTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.Sid" />
+        <item itemvalue="Application.MD5Utils" />
+        <item itemvalue="JUnit.TransTest.myTest" />
+        <item itemvalue="JUnit.TransTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d69d2737-6394-48cc-b7ad-34612f36464f" name="Changes" comment="" />
+      <created>1687867545992</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687867545992</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
