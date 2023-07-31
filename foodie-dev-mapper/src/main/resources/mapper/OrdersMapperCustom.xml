@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qw.mapper.OrdersMapperCustom" >
+  <resultMap id="MyOrdersVO" type="com.qw.pojo.vo.MyOrdersVO">
+    <id column="id" property="id" />
+    <result column="createdTime" property="createdTime" />
+    <result column="payMethod" property="payMethod" />
+    <result column="realPatAmount" property="realPayAmount" />
+    <result column="postAmount" property="postAmount" />
+    <result column="isComment" property="isComment" />
+    <result column="orderStatus" property="orderStatus" />
+    <!--
+          collection 标签：用于定义关联的list集合类型的封装规则
+          property：对应三级分类的list属性名
+          ofType：集合的类型，三级分类的vo
+        -->
+    <collection property="orderItems" ofType="com.qw.pojo.vo.MyOrderItemsVO">
+      <id column="itemId" property="itemId" />
+      <result column="itemName" property="itemName" />
+      <result column="itemImg" property="itemImg" />
+      <result column="itemSpecId" property="itemSpecId" />
+      <result column="itemSpecName" property="itemSpecName" />
+      <result column="buyCounts" property="buyCounts" />
+      <result column="price" property="price" />
+    </collection>
+
+  </resultMap>
+<!--  分类的vo-->
+  <select id="queryMyOrders" resultType="com.qw.pojo.vo.MyOrdersVO" parameterType="Map">
+    select
+      od.id as orderId,
+      od.created_time as createdTime,
+      od.pay_method as payMethod,
+      od.real_pay_amount as realPayAmount,
+      od.post_amount as postAmount,
+      od.is_comment as isComment,
+      os.order_status as orderStatus,
+      oi.item_id as itemId,
+      oi.item_id as itemName,
+      oi.item_img as itemImg,
+      oi.item_spec_id as itemSpecId,
+      oi.item_spec_name as itemSpecName,
+      oi.buy_counts as buyCounts,
+      oi.price as price
+    from
+      orders od
+    left join order_status os on od.id = os.order_id
+    left join order_items oi on od.id = oi.order_id
+    where od.user_id = #{paramsMap.userId} and
+      od.is_delete = 0
+      <if test = "paramsMap.orderStatus != null">
+        and os.order_status = #{paramsMap.orderStatus}
+      </if>
+    order by od.updated_time
+  </select>
+
+</mapper>

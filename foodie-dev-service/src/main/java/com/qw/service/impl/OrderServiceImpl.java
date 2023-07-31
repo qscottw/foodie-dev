@@ -1,6 +1,7 @@
 package com.qw.service.impl;
 
 import com.qw.enums.OrderStatusEnum;
+import com.qw.enums.PayMethod;
 import com.qw.enums.YesOrNo;
 import com.qw.mapper.CarouselMapper;
 import com.qw.mapper.OrderItemsMapper;
@@ -8,15 +9,26 @@ import com.qw.mapper.OrderStatusMapper;
 import com.qw.mapper.OrdersMapper;
 import com.qw.pojo.*;
 import com.qw.pojo.bo.SubmitOrderBO;
+import com.qw.pojo.vo.MerchantOrdersVO;
+import com.qw.pojo.vo.OrderVO;
 import com.qw.service.AddressService;
 import com.qw.service.CarouselService;
 import com.qw.service.ItemsService;
 import com.qw.service.OrderService;
+import com.qw.utils.CookieUtils;
+import com.qw.utils.DateUtil;
+import org.aspectj.weaver.ast.Or;
 import org.n3r.idworker.Sid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+import tk.mybatis.mapper.annotation.Order;
 import tk.mybatis.mapper.entity.Example;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.*;
 import java.util.Date;
 import java.util.List;
 
@@ -37,7 +49,8 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     Sid sid;
     @Override
-    public void createOrder(SubmitOrderBO submitOrderBO) {
+    @Transactional(propagation = Propagation.REQUIRED)
+    public OrderVO createOrder(SubmitOrderBO submitOrderBO) {
         String userId = submitOrderBO.getUserId();
         String addressId = submitOrderBO.getAddressId();
         String itemSpecIds = submitOrderBO.getItemSpecIds();
@@ -103,6 +116,7 @@ public class OrderServiceImpl implements OrderService {
             subOrderItem.setItemSpecName(itemsSpec.getName());
             subOrderItem.setPrice(itemDiscountPrice);
             orderItemsMapper.insert(subOrderItem);
+            // 4. deduce stock
             itemsService.decreaseItemSpecStock(itemSpecId, buyCounts);
         }
 
@@ -116,5 +130,62 @@ public class OrderServiceImpl implements OrderService {
         newOrderStatus.setOrderId(orderId);
         newOrderStatus.setOrderStatus(OrderStatusEnum.WAIT_PAY.type);
         orderStatusMapper.insert(newOrderStatus);
+
+        // 4. create merchant order, sent to payment center
+        MerchantOrdersVO merchantOrdersVO = new MerchantOrdersVO();
+        merchantOrdersVO.setMerchantOrderId(orderId);
+        merchantOrdersVO.setAmount(realPayAmount + postAmount);
+        merchantOrdersVO.setMerchantUserId(userId);
+        merchantOrdersVO.setPayMethod(payMethod);
+
+        // 5. construct customized ordvo
+        OrderVO orderVO = new OrderVO();
+        orderVO.setOrderId(orderId);
+        orderVO.setMerchantOrdersVO(merchantOrdersVO);
+
+        return orderVO;
+
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void updateOrderStatus(String orderId, Integer orderStatus) {
+        OrderStatus paidStatus = new OrderStatus();
+        paidStatus.setOrderId(orderId);
+        paidStatus.setOrderStatus(orderStatus);
+        paidStatus.setPayTime(new Date());
+
+        orderStatusMapper.updateByPrimaryKeySelective(paidStatus);
+    }
+
+    @Transactional(propagation = Propagation.REQUIRED)
+    @Override
+    public void closeOrder() {
+        // search all unpaid, check if overtimed (1 day), if overtime then close
+        OrderStatus queryOrder = new OrderStatus();
+        queryOrder.setOrderStatus(OrderStatusEnum.WAIT_PAY.type);
+        List<OrderStatus> orderStatuses = orderStatusMapper.select(queryOrder);
+
+        for (OrderStatus os : orderStatuses){
+            Date createdTime = os.getCreatedTime();
+            int days = DateUtil.daysBetween(createdTime, new Date());
+            if (days >= 1){
+
+                doCloseOrder(os.getOrderId());
+                // if over 1 day close the
+            }
+        }
+
+    }
+
+    @Transactional(propagation = Propagation.REQUIRED)
+    void doCloseOrder(String orderId){
+        OrderStatus close = new OrderStatus();
+        close.setOrderId(orderId);
+        close.setOrderStatus(OrderStatusEnum.CLOSE.type);
+        close.setCloseTime(new Date());
+
+        orderStatusMapper.updateByPrimaryKey(close);
+
     }
 }

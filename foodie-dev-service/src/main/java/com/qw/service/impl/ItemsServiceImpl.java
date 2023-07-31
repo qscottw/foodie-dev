@@ -104,7 +104,6 @@ public class ItemsServiceImpl implements ItemsService {
         //mybatis-pagehelper
         PageHelper.startPage(page, pageSize);
         List<ItemCommentVO> list = itemsMapperCustom.queryItemComments(map);
-
         for (ItemCommentVO vo : list) {
             vo.setNickname(DesensitizationUtil.commonDisplay(vo.getNickname()));
         }
